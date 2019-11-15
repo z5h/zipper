@@ -1,9 +1,8 @@
 module Zipper exposing
     ( Zipper
     , zip, unzip, value
-    , into, intoMaybe
+    , into, intoMaybe, andThenInto
     , map, mapMaybe
-    , andThenInto
     )
 
 {-|
@@ -25,7 +24,7 @@ Traverse into a structure, maintaining a focus which can be mapped,
 and maintaining a way to "unzip" out of the zipper having the focused operations
 affect the structure.
 
-@docs into, intoMaybe, andThenIntoMaybe
+@docs into, intoMaybe, andThenInto
 
 
 # Mapping
