@@ -3,7 +3,7 @@
     "name": "z5h/zipper",
     "summary": "A zipper allows easy manipulation of nested records.",
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "exposed-modules": [
         "Zipper"
     ],
