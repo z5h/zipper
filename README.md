@@ -55,7 +55,7 @@ updateCtoBonus f c =
         |> zip
         |> into .cto (\cto company -> { company | cto = cto })
         |> intoMaybe .pay (\pay cto -> { cto | pay = pay })
-        |> andThenInto .bonus (\bonus salary -> { salary | bonus = bonus })
+        |> andThenInto .bonus (\bonus pay -> { pay | bonus = bonus })
         |> mapMaybe (\bonus -> bonus * f)
         |> unzip
 ```
