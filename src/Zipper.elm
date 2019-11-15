@@ -32,8 +32,6 @@ affect the structure.
 
 @docs map, mapMaybe
 
-@docs eg
-
 -}
 
 
